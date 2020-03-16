@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".AddProduct">
+<LinearLayout
+    android:layout_weight="9"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Add new product"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/addimg"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectedListview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/selectpics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/loginbutton_selector"
+            android:text="select pics"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/txt_background"
+            android:padding="5dp"
+            android:text="Fill the product details"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:paddingTop="3dp"
+                    android:theme="@style/textInputLayoutStyleLogin">
+
+                    <EditText
+                        android:id="@+id/proname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:hint="Product Name*"
+                        android:inputType="text"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingEnd="3dp"
+                        android:paddingRight="3dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/categoryspin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/black"
+                            android:dropDownWidth="match_parent"
+                            android:overlapAnchor="false"
+                            android:spinnerMode="dropdown"
+
+                            android:visibility="visible">
+
+                        </Spinner>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textinputcost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:paddingTop="3dp"
+                    android:theme="@style/textInputLayoutStyleLogin">
+
+                    <EditText
+                        android:id="@+id/cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:hint="Cost*"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingEnd="3dp"
+                        android:paddingRight="3dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/selectcolors"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select available colors*"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/colorstextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/white"
+                    android:textSize="17dp"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/uploadpro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_selector"
+            android:text="Upload product"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+<!--    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimary"
+        android:visibility="gone"
+        android:progressBackgroundTint="@color/colorPrimary"/>-->
+
+
+</LinearLayout>

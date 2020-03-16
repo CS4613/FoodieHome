@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        <color name="colorPrimary">#008577</color>
+        <color name="colorPrimaryDark">#00574B</color>
+        <color name="colorAccent">#D81B60</color>
+    -->
+
+
+
+    <color name="colorPrimary4">#361C27</color>
+    <color name="colorPrimaryDark4">#210e18</color>
+    <color name="colorAccent4">#361C27</color>
+
+    <color name="colorPrimary">#03354c</color>
+    <color name="colorPrimaryDark">#032738</color>
+    <color name="colorAccent">#03354c</color>
+
+    <color name="colorPrimary3">#222d32</color>
+    <color name="colorPrimaryDark3">#141b1e</color>
+    <color name="colorAccent3">#222d32</color>
+
+    <color name="colorPrimary2">#4F2F4C</color>
+    <color name="colorPrimaryDark2">#362034</color>
+    <color name="colorAccent2">#4F2F4C</color>
+
+    <color name="colorPrimary5">#085f65</color>
+    <color name="colorPrimaryDark5">#05494e</color>
+    <color name="colorAccent5">#4F2F4C</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="background_white">#ece5dd</color>
+    <color name="backgroud_dull">#FCF9F2</color>
+    <color name="orange">#FA6304</color>
+    <color name="black">#FF000000</color>
+    <color name="txt_background">#90504C4C</color>
+    <color name="blue">#00B0FF</color>
+
+    <color name="green">#00E676</color>
+    <color name="yellow">#FFEA00</color>
+    <color name="lightblack">#E8303131</color>
+    <color name="placeholder_bg">#dddddd</color>
+
+</resources>

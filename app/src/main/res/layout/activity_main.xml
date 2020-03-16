@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Likhazon"
+        android:elevation="3dp"
+        app:titleTextColor="#fff">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:shape="ring"
+                        android:layout_marginTop="30dp"
+                        android:elevation="10dp"
+                        android:id="@+id/view2"
+                        android:innerRadius="0dp"
+                        app:cardCornerRadius="50dp"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="100dp">
+                        <ImageView
+                            android:id="@+id/member_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/contact"
+                            android:gravity="left" />
+                    </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dileep"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardElevation="2dp"
+                        app:layout_collapseMode="pin"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.2"
+                                android:orientation="horizontal"
+
+                                android:weightSum="4">
+
+                                <LinearLayout
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+
+
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Products"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/products_total"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="@color/orange"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Offers"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/offers_total"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="@color/orange"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+
+
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Best sellers"
+                                        android:singleLine="true"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/incident_total"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="@color/orange"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="1dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="2dp"
+                                    android:layout_weight="1"
+
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="Something"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/notification_total"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="0"
+                                        android:textColor="@color/orange"
+
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_weight="0.8">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    app:cardBackgroundColor="@color/white"
+                                    app:cardCornerRadius="2dp"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:clickable="true"
+                                    app:cardElevation="3dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <Spinner
+                                            android:id="@+id/dashspinner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:backgroundTint="@color/black"
+                                            android:dropDownWidth="match_parent"
+                                            android:spinnerMode="dropdown"
+                                            android:visibility="visible"
+
+                                            android:overlapAnchor="false">
+
+                                        </Spinner>
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <!-- <Spinner
+                                     android:id="@+id/dashspinner"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:layout_marginTop="5dp"
+                                     android:background="@android:drawable/btn_dropdown"
+                                     android:backgroundTintMode="src_over"
+                                     android:spinnerMode="dropdown"
+                                     android:textAlignment="center"
+
+                                     android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                     android:visibility="gone" />-->
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/viewmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="@string/view_more"
+                        android:layout_marginRight="20sp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <androidx.gridlayout.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="25dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/addnewpro"
+                                android:layout_width="0dp"
+                                android:layout_height="150dp"
+                                app:layout_column="0"
+                                app:layout_row="0"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:layout_columnWeight="1"
+                                app:layout_rowWeight="1"
+
+                                app:cardElevation="3dp"
+                                android:layout_margin="10dp"
+                                app:layout_gravity="fill">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/add"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Add new veg pizza"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="14dp"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/offer"
+                                android:layout_width="0dp"
+                                android:layout_height="150dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:layout_column="1"
+                                app:layout_row="0"
+                                app:layout_columnWeight="1"
+                                app:layout_rowWeight="1"
+                                android:layout_margin="10dp"
+
+                                app:cardElevation="3dp"
+                                app:layout_gravity="fill">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/offers"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Add new offers"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorPrimary"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="14dp"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/bseller"
+                                android:layout_width="0dp"
+                                android:layout_height="150dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:layout_column="0"
+                                app:layout_row="1"
+                                android:layout_margin="10dp"
+                                app:layout_columnWeight="1"
+                                app:layout_rowWeight="1"
+
+                                app:cardElevation="3dp"
+                                app:layout_gravity="fill">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/best"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Best sellers"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        android:textSize="14dp"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/addnonveg"
+                                android:layout_width="0dp"
+                                android:layout_height="150dp"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:layout_column="1"
+                                app:layout_row="1"
+                                android:layout_margin="10dp"
+                                app:layout_columnWeight="1"
+                                app:layout_rowWeight="1"
+
+                                app:cardElevation="3dp"
+                                app:layout_gravity="fill">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/addperson"/>
+                                    <TextView
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Add new non veg pizza"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textStyle="bold"
+                                        android:textSize="14dp"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.gridlayout.widget.GridLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
